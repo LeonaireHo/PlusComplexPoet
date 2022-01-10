@@ -21,7 +21,14 @@ from collections import OrderedDict
 DEFAULT_ENV = Env_config(
         name='default_env',
         ground_roughness=0,
-        pit_gap=[])
+        pit_gap=[],
+        stump_width = [],
+        stump_height = [],
+        stump_float = [],
+        stair_height = [],
+        stair_width = [],
+        stair_steps = []
+        )
 
 class Box2DNiche(Niche):
     def __init__(self, env_configs, seed, init='random', stochastic=False):
